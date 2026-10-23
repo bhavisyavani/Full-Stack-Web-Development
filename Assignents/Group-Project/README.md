@@ -13,15 +13,16 @@ An enterprise-grade, real-time campus facility and academic resource reservation
 
 ## Team Members
 
-This Project was Developed collaboratively as part of our Academic group project
+This project was developed collaboratively as part of our academic group project.
 
 | S. No. | Team Member Name |
-|1| | Shaik Shabaz |
-|2| | Vishnu Vardhan |
-|3| | Pilli Hemanth |
-|4| | Kurmana Sai Sampath |
-|5| | Batta Bhavishyavani |
-|6| | Suresh |
+|:------:|------------------|
+| 1 | Shaik Shabaz |
+| 2 | Vishnu Vardhan |
+| 3 | Pilli Hemanth |
+| 4 | Kurmana Sai Sampath |
+| 5 | Batta Bhavishyavani |
+| 6 | Suresh |
 
 ## 📑 Table of Contents
 
