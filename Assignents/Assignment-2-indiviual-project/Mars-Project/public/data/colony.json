@@ -1,0 +1,31 @@
+{
+  "colony": {
+    "name": "ARES STATION",
+    "designation": "MARS COLONY 01",
+    "location": "Elysium Planitia · Mars",
+    "sol": 184,
+    "crew": 12,
+    "missionDay": 184,
+    "missionDuration": 720
+  },
+  "resources": [
+    { "id": "oxygen", "name": "Oxygen", "short": "O₂", "value": 78, "unit": "%", "capacity": 100, "consumption": 4.2, "production": 3.8, "critical": 25, "color": "#6ee7f9", "icon": "Wind" },
+    { "id": "water", "name": "Water", "short": "H₂O", "value": 64, "unit": "%", "capacity": 100, "consumption": 5.1, "production": 4.4, "critical": 22, "color": "#69a9ff", "icon": "Droplets" },
+    { "id": "food", "name": "Food", "short": "NUTRIENTS", "value": 82, "unit": "%", "capacity": 100, "consumption": 3.6, "production": 2.7, "critical": 20, "color": "#a7e58b", "icon": "Sprout" },
+    { "id": "energy", "name": "Power", "short": "ENERGY", "value": 71, "unit": "%", "capacity": 100, "consumption": 6.4, "production": 7.8, "critical": 18, "color": "#f6c86b", "icon": "Zap" }
+  ],
+  "systems": [
+    { "id": "habitat", "name": "Habitat Alpha", "type": "CREW HABITAT", "status": "nominal", "health": 96, "x": 24, "y": 50, "description": "Pressurized crew quarters and medical bay." },
+    { "id": "greenhouse", "name": "Greenhouse", "type": "FOOD PRODUCTION", "status": "nominal", "health": 88, "x": 50, "y": 27, "description": "Hydroponic crops and oxygen-support research." },
+    { "id": "power", "name": "Solar Array", "type": "POWER GENERATION", "status": "nominal", "health": 91, "x": 76, "y": 47, "description": "Solar panels and battery storage." },
+    { "id": "water", "name": "Water Recycler", "type": "LIFE SUPPORT", "status": "nominal", "health": 84, "x": 49, "y": 70, "description": "Greywater recovery and purification unit." },
+    { "id": "comms", "name": "Comms Tower", "type": "COMMUNICATIONS", "status": "nominal", "health": 98, "x": 79, "y": 76, "description": "Long-range communications relay." }
+  ],
+  "scenarios": [
+    { "id": "dust-storm", "name": "Global Dust Storm", "severity": "high", "duration": 3, "description": "Dust reduces solar generation and increases thermal-control demand.", "effects": { "energy": -22, "oxygen": -4, "water": -3, "food": -2 }, "system": "power" },
+    { "id": "water-leak", "name": "Water Recycler Leak", "severity": "critical", "duration": 2, "description": "A seal failure reduces water recovery efficiency.", "effects": { "water": -24, "energy": -5 }, "system": "water" },
+    { "id": "oxygen-fault", "name": "Oxygen Regulator Fault", "severity": "critical", "duration": 1, "description": "A regulator fault reduces oxygen availability until repaired.", "effects": { "oxygen": -27, "energy": -4 }, "system": "habitat" },
+    { "id": "solar-damage", "name": "Solar Array Damage", "severity": "medium", "duration": 4, "description": "A damaged panel string lowers power generation.", "effects": { "energy": -17 }, "system": "power" },
+    { "id": "crop-failure", "name": "Greenhouse Crop Stress", "severity": "medium", "duration": 5, "description": "Crop stress lowers food output and oxygen contribution.", "effects": { "food": -16, "oxygen": -5, "water": -2 }, "system": "greenhouse" }
+  ]
+}
